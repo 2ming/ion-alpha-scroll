@@ -30,7 +30,7 @@ const ALPHABETS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
                 </ng-container>
             </div>
         </ion-list>
-        <ul class="ion-alpha-sidebar" [ngStyle]="calculateDimensionsForSidebar()">
+        <ul ion-fixed class="ion-alpha-sidebar" [ngStyle]="calculateDimensionsForSidebar()">
             <li *ngFor="let alpha of alphabet" [class]="setAlphaClass(alpha)" tappable
                 (click)="alphaScrollGoToList(alpha.letter)">
                 <a>{{alpha.letter}}</a>
